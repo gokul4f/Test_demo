@@ -9,12 +9,12 @@ def color_risk(val):
     """
     Takes a scalar and returns a string with
     the css property `'color: red'` for high risk,
-    'color: orange' for medium risk, and 'color: green' for low risk.
+    'color: yellow' for medium risk, and 'color: green' for low risk.
     """
     if val < 0.3:
         color = 'green'
     elif 0.3 <= val <= 0.6:
-        color = 'orange'
+        color = 'yellow'
     else:
         color = 'red'
     return f'color: {color}'
