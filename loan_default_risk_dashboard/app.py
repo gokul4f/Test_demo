@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Set the page title
-st.set_page_config(page_title='Loan Default Risk Dashboard')
+st.set_page_config(page_title='Guild Dashboard')
 
 # Function to define color-coding for risk levels
 def color_risk(val):
@@ -23,7 +23,7 @@ def color_risk(val):
 df = pd.read_csv('loan_default_risk_dashboard/borrower_data.csv')
 
 # Add a title to the dashboard
-st.title('Loan Default Risk Dashboard')
+st.title('Guild Dashboard')
 
 # Search and filter functionality by borrower name
 name_search = st.text_input('Search by borrower name:')
